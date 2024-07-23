@@ -118,7 +118,7 @@ const Home = () => {
               </address>
             </li>
           </ul>
-          <GogleMap />  
+          <GogleMap />    
         </div>
       </div>
     </>
