@@ -8,7 +8,7 @@ Jose Rodriguez */
   justify-content: center;
   height: 300px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   overflow-x: hidden;
 }
 .innner {
@@ -22,7 +22,6 @@ Jose Rodriguez */
   background-size: cover;
   border-radius: 0.75rem;
   border-radius: 2rem;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
   cursor: pointer;
   display: flex;
   margin: 0 10px;
@@ -32,12 +31,16 @@ Jose Rodriguez */
 }
 
 .card > .row {
+  position: relative;
   color: white;
   display: flex;
   flex-wrap: nowrap;
 }
 
 .card > .row > .icon {
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
   width: 40px;
   height: 40px;
   margin-top: auto;

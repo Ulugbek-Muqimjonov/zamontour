@@ -11,6 +11,8 @@ import {
 import ExploreCard from "@/components/exploreCard/exploreCard";
 import VisitCountryCard from "@/components/visitContryCard/visitCoutryCard";
 import BestLoactionSlider from "@/components/bestLocationSlider/bestLocationSlider";
+import { Link } from "react-router-dom";
+import GogleMap from "@/components/gogleMap/gogleMap";
 const Home = () => {
   return (
     <>
@@ -73,8 +75,50 @@ const Home = () => {
           </ul>
         </div>
         <div className="container">
-
-        <BestLoactionSlider/> 
+          <BestLoactionSlider />
+        </div>
+        <div className="reservation">
+          <div className="container">
+            <h3 className="reservation-title">Book prefed Deal Here</h3>
+            <span className="reservation-line"></span>
+            <h4 className="reservation-subtitle">Make Your Reservation</h4>
+            <Link className="reservation-link" to={"#contact"}>
+              Discover More
+            </Link>
+          </div>
+        </div>
+        <div className="myconatiner">
+          <ul className="call-list">
+            <li className="call-item">
+              <span className="call-item-title">Make a Phone Call</span>
+              <a className="call-link" href="tel:998992999996">
+                +998 99 299 99 96
+              </a>
+            </li>
+            <li className="call-item">
+              <span className="call-item-title call-item-title-email">
+                Contact Us via Email
+              </span>
+              <a href="mailto:zamonbiznestour@mail.ru" className="call-link">
+                zamonbiznestour@mail.ru
+              </a>
+            </li>
+            <li className="call-item">
+              <span className="call-item-title call-item-title-adress">
+                Visit Our Offices
+              </span>
+              <address>
+                <a
+                  className="call-link"
+                  href="https://yandex.uz/maps/10335/tashkent/house/YkAYdw9gTEIFQFprfX54dHxnZg==/?ll=69.180572%2C41.295042&z=16"
+                  target="blank"
+                >
+                  15/25, Chilanzar - 9, Tashkent city
+                </a>
+              </address>
+            </li>
+          </ul>
+          <GogleMap />  
         </div>
       </div>
     </>
