@@ -1,0 +1,92 @@
+/* author: https://codepen.io/danielwuachin/pen/NWoqxjv
+Jose Rodriguez */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+}
+.innner {
+  display: flex;
+  height: 100%;
+  /* width: 90%; */
+  /* flex-direction: column; */
+}
+.card {
+  align-items: flex-end;
+  background-size: cover;
+  border-radius: 0.75rem;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: flex;
+  margin: 0 10px;
+  overflow: hidden;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  width: 20px;
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("../../assets/images/icon.svg");
+}
+
+.card > .row > .description {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+  width: 50px;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 150px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url("../../assets/images/dubai1.jpg");
+}
+
+.card[for="c2"] {
+  background-image: url("../../assets/images/antalya1.jpg");
+}
+
+.card[for="c3"] {
+  background-image: url("../../assets/images/istanbul.jpg");
+}

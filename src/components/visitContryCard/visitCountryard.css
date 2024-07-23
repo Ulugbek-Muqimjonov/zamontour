@@ -1,0 +1,51 @@
+.visitCountryCard-innerlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #afafaf;
+}
+.visitCountryCard-innerItem {
+  display: flex;
+  gap: 8px;
+}
+.visitCountryCard-innerItem::before {
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/peopleIcon.svg");
+  content: "";
+}
+.visitCountryCard-territory::before {
+  width: 16px;
+  height: 17px;
+  background-image: url("../../assets/images/worldIcon.svg");
+}
+.visitCountryCard-price::before {
+  width: 18px;
+  height: 17px;
+  background-image: url("../../assets/images/home.svg");
+}
+
+.visitCountryLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #22b3c1;
+  font-weight: 500;
+}
+.visitCountryLink::after {
+  display: inline-block;
+  width: 13px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/rightArr.svg");
+  content: "";
+}

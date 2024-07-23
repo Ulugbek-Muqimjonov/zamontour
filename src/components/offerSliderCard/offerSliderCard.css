@@ -1,0 +1,139 @@
+.offer-slide {
+  padding: 0 30px;
+}
+.offerCard {
+  position: relative;
+  padding: 30px;
+  box-shadow: 0px 0px 15px #00000026;
+  border-radius: 23px;
+  background-color: #fff;
+  text-align-last: left;
+}
+.offerCard::before {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  top: -30px;
+  left: -20px;
+  width: 150px;
+  height: 162px;
+  border-radius: 23px 0 0 23px;
+  background-size: cover;
+  background-image: url("../../assets/images/deals-04.jpg");
+  content: "";
+}
+.offerCard2::before {
+  background-image: url("../../assets/images/offers-02.jpg");
+}
+.offerCard3::before {
+  background-image: url("../../assets/images/deals-01.jpg");
+}
+.offerCard4::before {
+  background-image: url("../../assets/images/offers-01.jpg");
+}
+.offerCard5::before {
+  background-image: url("../../assets/images/usa1.jpg");
+}
+.offerCard6::before {
+  background-image: url("../../assets/images/deals-02.jpg");
+}
+.offerCard7::before {
+  background-image: url("../../assets/images/cand.jpg");
+}
+.offerCard8::before {
+  background-image: url("../../assets/images/europe2.jpg");
+}
+.offerCard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.offerCard-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.offerCard-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: #afafaf;
+  font-weight: 400;
+}
+.offerCard-subtitle::before {
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  background-size: contain;
+  background-image: url("../../assets/images/personicon.png");
+  content: "";
+}
+.offerCard-price {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #22b3c1;
+  text-align: right;
+  font-size: 20px;
+  color: #22b3c1;
+}
+.offerCard-price::after {
+  font-size: 15px;
+  color: #afafaf;
+  font-weight: 400;
+  content: "/person";
+}
+.offerCard-innerTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.offerCard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.offerCard-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #afafaf;
+  font-size: 14px;
+}
+.offerCard-item::before {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  background-size: cover;
+  background-image: url("../../assets/images/carIcon.png");
+  content: "";
+}
+.offerCard-item-plane::before {
+  background-image: url("../../assets/images/planeIcon.svg");
+}
+.offerCard-item-tower::before {
+  width: 10px;
+  height: 13px;
+  background-image: url("../../assets/images/binoIcon.svg");
+}
+
+.offerCard-button {
+  display: flex;
+  justify-content: center;
+  padding: 12px 30px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #22b3c1;
+  border-radius: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+}

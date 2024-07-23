@@ -1,0 +1,32 @@
+.exploreCard-img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 23px;
+  object-fit: cover;
+}
+.exploreCard-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 19px;
+}
+.exploreCard-subtitleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.exploreCard-subtitle {
+  font-size: 15px;
+  color: #afafaf;
+}
+.exploreCard-desc {
+  font-size: 15px;
+  line-height: 30px;
+  color: #afafaf;
+  text-align: left;
+}
+.exploreCard-item {
+    padding-bottom: 30px;
+  border-bottom: 1px solid #afafaf75;
+}

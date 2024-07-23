@@ -1,0 +1,13 @@
+.visaSupportCard-item::before {
+  width: 14px;
+  height: 13.6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/markicon.svg");
+}
+.visaSupportCard-item-prosses::before {
+  background-image: url("../../assets/images/clockIcon.svg");
+}
+.visaSupportCard-item-trustworthy::before {
+  background-image: url("../../assets/images/trueIcon.svg");
+}

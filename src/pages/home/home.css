@@ -1,0 +1,57 @@
+.offers {
+  padding: 0 20px;
+  padding-top: 70px;
+}
+.offers-title {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+.offers-subtitle {
+  font-size: 15px;
+  line-height: 30px;
+  color: #afafaf;
+}
+
+.visaSupport-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+.line {
+  margin-top: 50px;
+}
+.visaSupport-subtitle {
+  font-size: 15px;
+  line-height: 30px;
+  color: #afafaf;
+}
+.explore-title {
+  text-align: left !important;
+}
+.swiper-pagination-bullet {
+  display: none !important;
+}
+.line1 {
+  margin-bottom: 40px;
+}
+.explore-subtitle {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.exploreList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.countries-subtitle {
+  margin-bottom: 50px;
+}

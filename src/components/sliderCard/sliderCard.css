@@ -1,0 +1,49 @@
+.sliderCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 23px;
+  width: 96%;
+  background-color: #fff;
+}
+.slider-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: left;
+  color: #afafaf;
+}
+.slider-info::before {
+  margin: 8px 10px 5px 0;
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  content: "";
+}
+.slider-infobtn {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 28px;
+  text-align-last: left;
+  background-color: #22b3c1;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.slider-populationInfo::before {
+  background-image: url("../../assets/images/populationicon.svg");
+}
+.slider-territory::before {
+  background-image: url("../../assets/images/teritoryicon.svg");
+}
+.slider-avgPrice::before {
+  background-image: url("../../assets/images/avgicon.svg");
+}
+.info {
+  color: #22b3c1;
+  font-weight: bold;
+  font-size: 14px;
+}
