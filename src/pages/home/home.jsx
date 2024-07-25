@@ -13,6 +13,9 @@ import VisitCountryCard from "@/components/visitContryCard/visitCoutryCard";
 import BestLoactionSlider from "@/components/bestLocationSlider/bestLocationSlider";
 import { Link } from "react-router-dom";
 import GogleMap from "@/components/gogleMap/gogleMap";
+import Reservation from "@/components/reservation/reservation";
+import SocialLink from "@/components/socialLinks/socialLinks";
+import Footer from "@/components/footer/footer";
 const Home = () => {
   return (
     <>
@@ -118,7 +121,10 @@ const Home = () => {
               </address>
             </li>
           </ul>
-          <GogleMap />    
+          <GogleMap />
+          <Reservation />
+          <SocialLink />
+          <Footer />
         </div>
       </div>
     </>

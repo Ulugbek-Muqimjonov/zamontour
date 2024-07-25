@@ -1,0 +1,13 @@
+.social_linksWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.social_links {
+  width: 40px;
+  height: 40px;
+  color: #22b3c1;
+  text-decoration: none !important;
+}
