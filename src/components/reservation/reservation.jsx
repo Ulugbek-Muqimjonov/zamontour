@@ -48,8 +48,9 @@ const Reservation = () => {
           <select
             {...register("numberof_guest")}
             className="reservation__form-inp"
+            defaultValue={"ex. 3 or 4 or 5"}
           >
-            <option value="" hidden selected disabled>
+            <option value={"ex. 3 or 4 or 5"} disabled>
               ex. 3 or 4 or 5
             </option>
             <option value={1}>1</option>
