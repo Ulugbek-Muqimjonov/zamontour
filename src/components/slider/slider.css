@@ -23,7 +23,7 @@
 .swiper-wrap {
   width: 100%;
   padding-top: 20px;
-  height: calc(100vh - 100px);
+  height:100vh;
 }
 .swiper-button-prev::after {
   display: none !important;

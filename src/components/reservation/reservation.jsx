@@ -1,17 +1,34 @@
+import { useForm } from "react-hook-form";
 import "./reservation.css";
 const Reservation = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      user_name: "",
+      user_phone: "",
+      numberof_guest: "",
+      date: "",
+      destionation: "",
+      visa_support: "",
+    },
+  });
+
+  const onsubmit = (data) => console.log(data);
   return (
     <div className="reservation-formWrap">
-      <h4 className="reservation-title">
+      <h4 className="reservationForm-title">
         Make Your <span>Reservation</span> Through This <span>Form</span>
       </h4>
-      <form className="reservation__form">
+      <form className="reservation__form" onSubmit={handleSubmit(onsubmit)}>
         <label className="reservation__form-lable">
           Your Name
           <input
             className="reservation__form-inp"
             type="text"
-            name="user_name"
+            {...register("user_name")}
             placeholder="Ex. John Smithee"
             required
           />
@@ -21,15 +38,18 @@ const Reservation = () => {
           <input
             className="reservation__form-inp"
             type="tel"
-            name="user_phone"
+            {...register("user_phone")}
             placeholder="Ex. +99899 999 99 99"
             required
           />
         </label>
         <label className="reservation__form-lable">
           Number of Guest
-          <select name="numberof_guest" className="reservation__form-inp">
-            <option value="" disabled hidden selected>
+          <select
+            {...register("numberof_guest")}
+            className="reservation__form-inp"
+          >
+            <option value="" hidden selected disabled>
               ex. 3 or 4 or 5
             </option>
             <option value={1}>1</option>
@@ -40,11 +60,21 @@ const Reservation = () => {
         </label>
         <label className="reservation__form-lable">
           Check In Date
-          <input className="reservation__form-inp" type="date" name="date" />
+          <input
+            className="reservation__form-inp"
+            {...register("date")}
+            type="date"
+          />
         </label>
         <label className="reservation__form-lable">
           Choose Your Destination
-          <select name="destionation" className="reservation__form-inp">
+          <select
+            className="reservation__form-inp"
+            {...register("destionation")}
+          >
+            <option value={""} selected hidden disabled>
+              Destination
+            </option>
             <option value={"Antaliya"} selected>
               Antaliya
             </option>
@@ -58,8 +88,12 @@ const Reservation = () => {
         </label>
         <label className="reservation__form-lable">
           Choose Your Visa Support
-          <select name="visa_support" className="reservation__form-inp">
-            <option value="" disabled selected hidden>
+          <select
+            className="reservation__form-inp"
+            {...register("visa_support")}
+            defaultValue={""}
+          >
+            <option value="" disabled hidden>
               Country
             </option>
             <option value={"USA"}>USA</option>
@@ -73,7 +107,9 @@ const Reservation = () => {
             <option value={"Hong Kong"}>Hong Kong</option>
           </select>
         </label>
-        <button className="reservartion-button" type="submit">Make Your Reservation Now</button>
+        <button className="reservartion-button" type="submit">
+          Make Your Reservation Now
+        </button>
       </form>
     </div>
   );
