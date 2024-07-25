@@ -122,7 +122,7 @@ export const visaSupportIfo = [
   },
 ];
 
-import img1 from "../../src/assets/images/afr.jpg";
+import img1 from "./src/assets/images/afr.jpg";
 export const exploreInfo = [
   {
     id: 1,
