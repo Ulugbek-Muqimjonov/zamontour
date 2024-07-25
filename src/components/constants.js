@@ -122,10 +122,11 @@ export const visaSupportIfo = [
   },
 ];
 
+import img1 from "../../src/assets/images/afr.jpg";
 export const exploreInfo = [
   {
     id: 1,
-    img: "./src/assets/images/afr.jpg",
+    img: { img1 },
     title: "Cheap Railway Tickets With Us",
     subtitle: "Whole world",
     desc: " Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network.",
